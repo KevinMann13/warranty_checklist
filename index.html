@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<title>Warranty Checklist</title>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>WhisperKool Warranty Checklist</strong>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <p>
+            Please fill out the following form to ensure the cooling system is installed correctly.
+        </p>
+        <form id="checklist_form">
+            <div class="row">
+                <div class="form_heading">Customer Information</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="customer_first_name">First Name</label>
+                        <input type="text" class="form-control" id="customer_first_name" name="customer_first_name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="customer_last_name">Last Name</label>
+                        <input type="text" class="form-control" id="customer_last_name" name="customer_last_name">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form_heading">Installer Information</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" name="company">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="technician_name">Technician Name</label>
+                        <input type="text" class="form-control" id="technician_name" name="technician_name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="technician_phone">Technician Phone</label>
+                        <input type="text" class="form-control" id="technician_phone" name="technician_phone">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form_heading">System Information</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="unit_model">Unit Model</label>
+                        <select class="form-control" id="unit_model" name="unit_model">
+                            <option></option>
+                            <option>Extreme 3500ti</option>
+                            <option>Extreme 4500ti</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="coil_serial_number">Fan Coil Unit Serial Number</label>
+                        <input type="text" class="form-control" id="coil_serial_number" name="coil_serial_number">
+                        <small id="coil_serial_number_help" class="form-text text-muted">Located on model spec label</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="condenser_model">Condensing Unit Model Number</label>
+                        <input type="text" class="form-control" id="condenser_model" name="condenser_model">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="condenser_serial_number">Condensing Unit Serial Number</label>
+                        <input type="text" class="form-control" id="condenser_serial_number" name="condenser_serial_number">
+                        <small id="condenser_serial_number_help" class="form-text text-muted">Located on the grey plastic electrical box</small>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form_heading">Data Recordings</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="condenser_clearance" name="condenser_clearance">
+                        <label class="form-check-label" for="condenser_clearance">
+                            Airflow in and out of the
+                            <b>condenser</b> is clear of obstructions.
+                            <b>Condensing unit</b> supply and return must have minimum of three feet of clearance. (Five feet
+                            is ideal.)
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="evaporator_clearance" name="evaporator_clearance">
+                        <label class="form-check-label" for="evaporator_clearance">
+                            Airflow in and out of the
+                            <b>evaporator</b> is clear of obstructions.
+                            <b>Evaporator unit</b> supply and return must have minimum of three feet of clearance. (Five feet
+                            is ideal.)
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="return_air_temp">Return air entering evaporator coil</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="return_air_temp" name="return_air_temp">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="supply_air_temp">Supply air leaving unit</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="supply_air_temp" name="supply_air_temp">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="air_entering_condenser_temp">Air entering the condensing unit</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="air_entering_condenser_temp" name="air_entering_condenser_temp">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="head_pressure">Head pressure of the liquid line king valve</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="head_pressure" name="head_pressure">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">PSI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="liquid_line_temp">Temperature of the liquid line at the liquid line king valve</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="liquid_line_temp" name="liquid_line_temp">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="suction_pressure">Suction pressure at the suction service valve</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="suction_pressure" name="suction_pressure">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">PSI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="suction_line_temp">Temperature of the suction line at the service value</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="suction_line_temp" name="suction_line_temp">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="crankcase_temperature">Compressor crankcase temperature (bottom of the compressor)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="crankcase_temperature" name="crankcase_temperature">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">°F</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="compressor_voltage">Voltage to the compressor (running)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="compressor_voltage" name="compressor_voltage">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">V</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="amp_draw">Amp draw at the time of data recording</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="amp_draw" name="amp_draw">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">A</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="btn_submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="validation_success" class="row">
+            <div class="col">
+                <span class="success_label">
+                    Everything looks good! Great job!
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            For support, please contact
+            <a href="mailto:support@whisperkool.com">support@whisperkool.com</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
